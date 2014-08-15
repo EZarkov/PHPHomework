@@ -1,0 +1,77 @@
+body, div, header, article, section, h1, h2, span  {
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #6f490f;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+.calendar	{
+	width: 99%;
+	background: #6f490f;
+
+	padding: 20px 0;
+
+}
+.calendar header h1{
+	color:snow;
+	font-size: 56px;
+	text-align: center;
+	font-style: italic;
+}
+.month {
+	width: 33%;
+	display: inline-block;
+	float: left;
+}
+ .monthHead{
+	 display: inline-block;
+	 width: 97%;
+	 background: #6f490f;
+	 padding: 3%;
+	 color: whitesmoke;
+
+ }
+ .monthHead h2{
+	 margin: 10px 0;
+	 text-align: center;
+	 font-style: italic;
+
+ }
+
+.weekDays{
+	width: 14%;
+	display: inline-block;
+	font-weight:bold;
+	padding: 2px 0;
+	border-bottom: 1px solid white;
+	border-top: 1px solid white;
+	text-align: center;
+}
+.monthHead span:nth-child(7n),.monthHead span:nth-child(7n+1) {
+	color:red;
+}
+
+.monthDays{
+	width: 97%;
+	margin: 0 3%;
+	padding: 3% 0;
+	background: #ffd8a0;
+	min-height: 108px;
+}
+.days{
+	width: 14%;
+	display: inline-block;
+	font-style: italic;
+	text-align: center;
+
+}
+
+.monthDays span:nth-child(7n),.monthDays span:nth-child(7n-1){
+	color: #ff0000;
+}
+

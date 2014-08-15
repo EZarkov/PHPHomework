@@ -1,0 +1,23 @@
+body, div, header, article, h1,  {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 50px;
+	text-align: center;
+}
+
+input{
+	display: block;
+}
+
+p{
+	display: inline-block;
+	height: 25px;
+}
