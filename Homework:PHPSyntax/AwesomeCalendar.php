@@ -23,8 +23,7 @@ date_default_timezone_set("Europe/Sofia");
 				<h1>2014</h1>
 			</header>
 			<?php
-			$calendar = new Calendar();
-			$calendar->printCalendar(2014);
+			 Calendar::printCalendar(2014);
 			?>
 
 		</article>
@@ -49,7 +48,7 @@ class Calendar
 	const DECEMBER = 12;
 
 
-	public function printCalendar($year)
+	public static function printCalendar($year)
 	{
 		$calendar = [
 			self::JANUARY => cal_days_in_month(0, self::JANUARY, $year),
@@ -67,12 +66,12 @@ class Calendar
 		];
 		foreach ($calendar as $month => $days) {
 
-			$this->_printMont($days, $month, $year);
+			static::_printMont($days, $month, $year);
 		}
 	}
 
 
-	private function _printMont($days, $month, $year)
+	private static function _printMont($days, $month, $year)
 	{
 		$weekDays = ['M', 'T', 'W', 'T', 'F', 'S', 'Sun'];
 
