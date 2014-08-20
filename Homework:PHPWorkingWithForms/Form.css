@@ -1,0 +1,30 @@
+body, div, header, article, h1,  {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	padding: 50px;
+	text-align: center;
+}
+
+input[type="text"],input[type="submit"], label, select {
+	display: block;
+	margin: 10px 0;
+}
+
+.radioLabel, input [type="radio"]{
+	display: inline;
+}
+p{
+	display: inline-block;
+	min-height: 25px;
+}
+span{
+	display: block;
+}
